@@ -19,11 +19,11 @@ class TestProbabilityCalculator < MiniTest::Test
   private
   
   def probability(dices:, sum:)
-    ProbabilityCalculator.new(dices: dices, sum: sum).calculate
+    DiceProbabilityCalculator.new(dices: dices, sum: sum).calculate
   end
 end
 
-class ProbabilityCalculator
+class DiceProbabilityCalculator
   attr_reader :dices, :sum
   
   def initialize(dices:, sum:)
